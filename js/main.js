@@ -185,7 +185,7 @@ jQuery(document).ready(function( $ ) {
     const timeinterval = setInterval(updateClock, 1000);
   }
   
-  const deadline = new Date(2022,4,1);
+  const deadline = new Date(2022,3,29,10);
   initializeClock("clockdiv", deadline);
 
 });
