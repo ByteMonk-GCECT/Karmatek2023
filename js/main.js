@@ -45,9 +45,9 @@ jQuery(document).ready(function( $ ) {
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
     animation: {
-      opacity: 'show'
+      opacity: 'suhow'
     },
-    speed: 400
+    speed: 300
   });
 
   // Mobile Navigation
@@ -170,11 +170,11 @@ jQuery(document).ready(function( $ ) {
   
     function updateClock() {
       const t = getTimeRemaining(endtime);
-  
-      daysSpan.innerHTML = ("0");
-      hoursSpan.innerHTML = ("0");
-      minutesSpan.innerHTML = ("0");
-      secondsSpan.innerHTML = ("0");
+
+      daysSpan.innerHTML = t.days;
+      hoursSpan.innerHTML = t.hours;
+      minutesSpan.innerHTML = t.minutes;
+      secondsSpan.innerHTML = t.seconds;
   
       if (t.total <= 0) {
         clearInterval(timeinterval);
@@ -185,7 +185,7 @@ jQuery(document).ready(function( $ ) {
     const timeinterval = setInterval(updateClock, 1000);
   }
   
-  const deadline = new Date(2022,3,29,10);
+  const deadline = new Date(2023,10,09,10);
   initializeClock("clockdiv", deadline);
 
 });
