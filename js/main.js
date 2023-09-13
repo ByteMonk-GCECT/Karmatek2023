@@ -202,7 +202,7 @@ jQuery(document).ready(function ($) {
     const timeinterval = setInterval(updateClock, 1000);
   }
 
-  const deadline = new Date(2023, 10, 9, 10);
+  const deadline = new Date(2023, 9, 6, 10);
   initializeClock("clockdiv", deadline);
 
 
